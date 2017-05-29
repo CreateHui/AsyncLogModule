@@ -116,7 +116,7 @@ namespace AsyncLogModule
             tempRecord.LogCategory = (int)logCategory;
             tempRecord.LogLevel = (int)logLevel;
 #if _Release
-            tempRecord.RType = (int)RecordType.Release;
+            tempRecord.LogType = (int)RecordType.Release;
 #else
             tempRecord.LogType = (int)RecordType.Debug;
 #endif
